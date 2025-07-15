@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>PiyoTemplate</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png">PiyoTemplate
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+
+		<div class="container pt-3">
+			<h1>フォーム</h1>
+		</div>
+
+		<!-- リスト6-1 -->
+		<div class="container">
+			
+			<form>
+			<div class="mb-3">
+				<label class=" form-label" for="email1">メールアドレス</label>
+				<input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="メールアドレスを入力">
+				<small id="emailHelp" class="form-text text-muted">あなたに関する個人情報を収集することはありません。</small> 
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label" for="password1">パスワード</label>
+				<input type="password" class="form-control" id="password1" placeholder="パスワードを入力">
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label" for="select1">プルダウンメニュー</label>
+				<select class="form-select" id="select1">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label" for="select2">複数選択のプルダウンメニュー</label>
+				<select multiple class="form-select" id="select2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label" for="textarea1">複数行のテキスト入力欄</label>
+				<textarea class="form-control" id="textarea1" rows="3"></textarea>
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label" for="file1">ファイルを選択</label>
+				<input type="file" class="form-control" id="file1">
+			</div>
+
+			<div class="form-check mb-3">
+				<input type="checkbox" class="form-check-input" id="check1">
+				<label class="form-check-label" for="check1">チェックする</label>
+			</div>
+
+			<button type="submit" class="btn btn-primary">送信</button>
+		</form>
+
+		</div>
+
+		<!-- リスト6-2 -->
+		<div class="container">
+			
+			<label class="form-label" for="input1">大サイズテキスト入力欄</label>
+			<input class="form-control form-control-lg" id="input1" type="text" placeholder="form-control-lg"> 
+
+			<label class="form-label" for="input2">標準サイズテキスト入力欄</label>
+			<input class="form-control " id="input2" type="text" placeholder="Default size"> 
+
+			<label class="form-label" for="input3">小サイズテキスト入力欄</label>
+			<input class="form-control form-control-sm" id="input3" type="text" placeholder="form-control-sm"> 
+
+		</div>
+
+		<!-- リスト6-3 -->
+		<div class="container">
+			
+			<div class="mb-3">
+				<label class="form-label" for="input1">読み取り専用のテキストを表示</label>
+				<input class="form-control " id="input1" type="text" value="読み取り専用のテキスト" readonly>
+			</div>
+
+		</div>
+
+		<!-- リスト6-4 -->
+		<div class="container">
+			
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="check1">
+				<label class="form-check-label" for="check1">
+					チェック1（チェック無し）
+				</label>
+			</div>
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="check2" checked>
+				<label class="form-check-label" for="check2">
+					チェック2（チェック有り）
+				</label>
+			</div>
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="check3">
+				<label class="form-check-label" for="check3">
+					チェック3（不確定）
+				</label>
+			</div>
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="check4" disabled>
+				<label class="form-check-label" for="check4">
+					チェック4（無効）
+				</label>
+			</div>
+
+			<hr>
+
+			<div class="form-check">
+				<input class="form-check-input" type="radio" value="" id="radios1" value="option1" checked>
+				<label class="form-check-label" for="radios1">
+					オプション１
+				</label>
+			</div>
+			
+			<div class="form-check">
+				<input class="form-check-input" type="radio" value="" id="radios2" value="option2">
+				<label class="form-check-label" for="radios2">
+					オプション2
+				</label>
+			</div>
+
+			<div class="form-check">
+				<input class="form-check-input" type="radio" value="" id="radios3" value="option3" disabled>
+				<label class="form-check-label" for="radios3">
+					オプション3（無効）
+				</label>
+			</div>
+		</div>
+
+		<!-- リスト6-7 -->
+		<div class="container">
+			
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" value="" id="check1">
+				<label class="form-check-label" for="check1">
+					チェック１（デフォルト・チェック無し）
+				</label>
+			</div>
+
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" value="" id="check2" checked>
+				<label class="form-check-label" for="check2">
+					チェック2（チェックあり）
+				</label>
+			</div>
+
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" value="" id="check1">
+				<label class="form-check-label" for="check1">
+					チェック3（不確定）
+				</label>
+			</div>
+
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" value="" id="check4" disabled>
+				<label class="form-check-label" for="check4">
+					チェック4（無効・チェック無し）
+				</label>
+			</div>
+
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" value="" id="check5" checked disabled>
+				<label class="form-check-label" for="check5">
+					チェック5（無効・チェックあり）
+				</label>
+			</div>
+
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" value="" id="check6" disabled>
+				<label class="form-check-label" for="check6">
+					チェック6（無効・不確定）
+				</label>
+			</div>
+
+
+
+		</div>
+
+		<!-- リスト6-8 -->
+		<div class="container">
+			
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" value="option1" id="checkbox1" >
+				<label class="form-check-label" for="checkbox1">1</label>
+				</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" value="option2" id="checkbox2" >
+				<label class="form-check-label" for="checkbox2">2</label>
+				</label>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" value="option3" id="checkbox3" >
+				<label class="form-check-label" for="checkbox3">3</label>
+				</label>
+			</div>
+
+
+		</div>
+
+		<!-- リスト6-10 -->
+		<div class="container">
+			
+			<select class="form-select" aria-label="プルダウンメニュー">
+				<option selected>選択してください</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+
+		</div>
+
+		<!-- リスト6-11 -->
+		<div class="container">
+			
+			<h3>大サイズのプルダウンメニュー</h3>
+			<form>
+				<select class="form-select form-select-lg">
+					<option selected>選択してください</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</form>
+
+			<h3>標準サイズのプルダウンメニュー</h3>
+			<form>
+				<select class="form-select" >
+					<option selected>選択してください</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</form>
+
+			<h3>小サイズのプルダウンメニュー</h3>
+			<form>
+				<select class="form-select form-select-sm">
+					<option selected>選択してください</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</form>
+
+		</div>
+
+		<!-- リスト6-12 -->
+		<div class="container">
+			
+			<h3>複数選択メニュー</h3>
+			<form>
+				<select class="form-select" multiple>
+					<option selected>選択してください</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</form>
+
+			<h3>表示する選択肢の数を指定したメニュー</h3>
+			<form>
+				<select class="form-select" size="2">
+					<option selected>選択してください</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</form>
+
+		</div>
+
+		<!-- リスト6-13 -->
+		<div class="container">
+			
+			<div class="row mb-5">
+				<label for="formControlRange">レンジの入力例</label>
+				<input class="form-range" type="range" id="range1" >
+			</div>
+
+			
+			<div class="row mb-5">
+				<label for="formControlRange2">レンジの入力例（min="0",max="5"）</label>
+				<input class="form-range" type="range" min="0" max="5" id="range1" >
+			</div>
+			
+			<div class="row mb-5">
+				<label for="formControlRange3">レンジの入力例(step="0.5")</label>
+				<input class="form-range" type="range" min="0" max="5" step="0.5" id="range1" >
+			</div>
+
+		</div>
+
+		<!-- リスト6-14 -->
+		<div class="container">
+			
+			<form>
+				<div class="row">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="姓">
+					</div>
+					<div class="col">
+						<input type="text" class="form-control" placeholder="名">
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+		<!-- リスト6-15 -->
+		<div class="container">
+			
+			<form>
+				<div class="row g-1">
+					<div class="mb-3 col-md-6">
+						<label class="form-label" for="inputEmail">メールアドレス</label>
+						<input type="email" class="form-control" id="inputEmail" placeholder="メールアドレスを入力">
+					</div>
+					<div class="mb-3 col-md-6">
+						<label class="form-label" for="inputPassword">パスワード</label>
+						<input type="email" class="form-control" id="inputPassword" placeholder="パスワードを入力">
+					</div>
+				</div>
+
+				<div class="row g-1">
+					<div class="mb-3 col-md-4">
+						<label class="form-label" for="inputState">国</label>
+						<select id="inputState" class="form-control">
+							<option selected>Choose...</option>
+							<option>...</option>
+						</select>
+					</div>
+					<div class="mb-3 col-md-2">
+						<label class="form-label" for="inputZip">郵便番号</label>
+						<input type="text" class="form-control" id="inputZip">
+					</div>
+					<div class="mb-3 col-md-6">
+						<label class="form-label" for="inputCity">都道府県</label>
+						<input type="text" class="form-control" id="inputCity">
+					</div>
+				</div>
+				
+				<div>
+					<label class="form-label" for="input1">住所１</label>
+					<input class="form-control " id="input1" type="text" placeholder="市町村"> 
+				</div>
+				<div>
+					<label class="form-label" for="input2">住所2</label>
+					<input class="form-control " id="input2" type="text" placeholder="マンション名"> 
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="check1">
+					<label class="form-check-label" for="check1">
+						チェックする
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">サインイン</button>
+			</form>
+
+		</div>
+
+		<!-- リスト6-16 -->
+		<div class="container">
+			
+			<form>
+				<div class="mb-3 row">
+					<label for="inputEmail" class="form-label col-sm-2 col-form-label">メールアドレス</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail" placeholder="メールアドレスを入力">
+					</div>
+				</div>
+
+				<div class="mb-3 row" >
+					<label for="inputPassword" class="form-label col-sm-2 col-form-label">パスワード</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="inputPassword" placeholder="パスワードを入力">
+					</div>
+				</div>
+
+				<fieldset class="mb-3">
+					<div class="row">
+						<legend class="col-form-label col-sm-2 pt-0">ラジオボタン</legend>
+						<div class="col-sm-10">
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="radios" id="radios1" value="option1" checked>
+								<label class="form-check-label" for="radios1">
+									オプション１
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="radios" id="radios2" value="option2">
+								<label class="form-check-label" for="radios2">
+									オプション2
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input" name="radios" id="radios3" value="option" disabled>
+								<label class="form-check-label" for="radios3">
+									オプション3（無効）
+								</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<div class="mb-3 row">
+					<div class="col-sm-2">チェックボックス</div>
+					<div class="col-sm-10">
+						<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="check1">
+						<label class="form-check-label" for="check1">
+							チェックする
+						</label>
+						</div>
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<div class="col-sm-10">
+						<button type="submit" class="btn btn-primary">サインイン</button>
+					</div>
+				</div> 
+			</form>
+
+		</div>
+
+		<!-- リスト6-17 -->
+		<div class="container">
+			
+			<div class="mb-3 row" >
+				<label for="labelSm" class="form-label col-sm-2 col-form-label col-form-label-sm">小サイズ:col-form-label-sm</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control form-control-sm" id="labelSm" placeholder="form-control-sm">
+				</div>
+			</div>
+
+			<div class="mb-3 row" >
+				<label for="labelSm" class="form-label col-sm-2 col-form-label col-form-label-sm">標準サイズ</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control form-control-sm" id="labelSm" placeholder="Default size">
+				</div>
+			</div>
+
+			<div class="mb-3 row" >
+				<label for="labelSm" class="form-label col-sm-2 col-form-label col-form-label-lg">大サイズ:col-form-label-lg</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control form-control-sm" id="labelSm" placeholder="form-control-lg">
+				</div>
+			</div>
+
+		</div>
+
+		<!-- リスト6-18 -->
+		<div class="container">
+			
+			<form>
+				<div class="row g-2 align-items-center">
+					<div class="col-auto">
+						<label class="form]{-label visually-hideen" for="inputName">氏名</label>
+						<input type="text" class="form-control mb-2" id="inoutName" placeholder="氏名を入力">
+					</div>
+					<div class="col-auto">
+						<label class="form-label visually-hideen" for="inputUsername">ユーザーネーム</label>
+						<div class="input-group mb-2">
+							<div class="input-group-prepend">
+								<div class="input-group-text">@</div>
+							</div>
+							<input type="text" class="form-control" id="inputUsername" placeholder="ユーザーネームを入力">
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="form-check mb-2">
+							<input type="checkbox" class="form-check-input" id="check">
+							<label class="form-check-label" for="check">チェックする</label>
+						</div>
+					</div>
+					<div class="col-auto">
+						<button type="submit" class="btn btn-primary mb-2">送信</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/popper.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
