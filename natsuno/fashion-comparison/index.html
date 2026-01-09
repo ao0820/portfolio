@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Compare - Darich vs UNIQLO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">Fashion Compare</div>
+        <div class="controls">
+            <div class="input-group">
+                <span class="label">Left:</span>
+                <input type="text" id="url-left" value="https://www.darich.shop/" placeholder="Enter URL">
+                <a href="https://www.darich.shop/" target="_blank" class="external-link-icon" title="別タブで開く">↗</a>
+            </div>
+            <div class="divider-icon">⚡</div>
+            <div class="input-group">
+                <span class="label">Right:</span>
+                <input type="text" id="url-right" value="https://www.uniqlo.com/jp/ja/" placeholder="Enter URL">
+                <a href="https://www.uniqlo.com/jp/ja/" target="_blank" class="external-link-icon" title="別タブで開く">↗</a>
+            </div>
+            <button id="reset-btn" class="btn-reset">Reset</button>
+        </div>
+    </header>
+
+    <main class="split-container">
+        <!-- Left Pane -->
+        <section class="split-pane" id="pane-left">
+            <div class="pane-header">
+                <span class="brand-label">Darich</span>
+                <div class="pane-actions">
+                    <button class="refresh-btn" onclick="reloadIframe('frame-left')">↻</button>
+                    <a href="https://www.darich.shop/" target="_blank" class="open-tab-btn">表示されない場合はこちら</a>
+                </div>
+            </div>
+            <div class="iframe-wrapper">
+                <iframe id="frame-left" src="https://www.darich.shop/" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+            </div>
+        </section>
+
+        <!-- Right Pane -->
+        <section class="split-pane" id="pane-right">
+            <div class="pane-header">
+                <span class="brand-label">UNIQLO</span>
+                <div class="pane-actions">
+                    <button class="refresh-btn" onclick="reloadIframe('frame-right')">↻</button>
+                    <a href="https://www.uniqlo.com/jp/ja/" target="_blank" class="open-tab-btn">表示されない場合はこちら</a>
+                </div>
+            </div>
+            <div class="iframe-wrapper">
+                <iframe id="frame-right" src="https://www.uniqlo.com/jp/ja/" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
